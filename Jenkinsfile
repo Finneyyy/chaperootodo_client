@@ -4,7 +4,9 @@ pipeline{
             stage('Build App'){
                 steps{
                     sh "git clone https://gitlab.com/qacdevops/chaperootodo_client"
-                    sh "./docker-install.sh && reset"
+                    sh "./docker-install.sh"
+                    sh "sudo usermod -aG docker jenkins"
+                    sh "reset"
                     sh "./docker-compose.sh"
                 }
             }
