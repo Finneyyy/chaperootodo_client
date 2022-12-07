@@ -14,7 +14,6 @@ pipeline{
                     sh "chmod +x docker-install.sh && chmod +x docker-compose.sh"
                     sh "./docker-install.sh"
                     sh "sudo usermod -aG docker jenkins"
-                    sh "reset"
                     sh "./docker-compose.sh"
                 }
             }
