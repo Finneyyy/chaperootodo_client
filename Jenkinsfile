@@ -3,7 +3,8 @@ pipeline{
         stages{
             stage('Build App'){
                 steps{
-                    sh "git clone https://gitlab.com/qacdevops/chaperootodo_client"                    sh "./docker-install.sh && reset"
+                    sh "git clone https://gitlab.com/qacdevops/chaperootodo_client"
+                    sh "./docker-install.sh && reset"
                     sh "./docker-compose.sh"
                 }
             }
