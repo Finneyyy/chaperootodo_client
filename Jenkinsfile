@@ -3,7 +3,7 @@ pipeline{
         stages{
             stage('Build App'){
                 steps{
-                    sh "sudo -S rm -rf chaperootodo_client/"
+                    sh "rm -rf chaperootodo_client/"
                     sh "git clone https://gitlab.com/qacdevops/chaperootodo_client"
                     sh "./docker-install.sh"
                     sh "sudo usermod -aG docker jenkins"
