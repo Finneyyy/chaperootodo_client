@@ -11,4 +11,4 @@ docker-compose pull && docker-compose up -d
 The app will be running on `port 80`.
 
 ## Pics
-![PipelineUpAndRunning]()
+![PipelineUpAndRunning](https://github.com/Finneyyy/chaperootodo_client/blob/main/Capture.PNG)
