@@ -9,3 +9,6 @@ docker-compose pull && docker-compose up -d
 ```
 
 The app will be running on `port 80`.
+
+## Pics
+![PipelineUpAndRunning]()
