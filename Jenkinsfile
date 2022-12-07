@@ -1,10 +1,16 @@
 pipeline{
         agent any
         stages{
-            stage('Build App'){
+            stage('Install '){
                 steps{
                     sh "rm -rf chaperootodo_client/"
-                    sh "git clone https://gitlab.com/qacdevops/chaperootodo_client"
+                    sh "git clone https://github.com/Finneyyy/chaperootodo_client.git"
+                    
+                }
+            }    
+            stage('Install Docker'){
+                steps{
+                    sh "whoami"
                     sh "./docker-install.sh"
                     sh "sudo usermod -aG docker jenkins"
                     sh "reset"
