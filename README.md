@@ -12,4 +12,6 @@ The app will be running on `port 80`.
 
 ## Pics
 ![PipelineUpAndRunning](https://github.com/Finneyyy/chaperootodo_client/blob/main/Capture.PNG)
+
+
 ![StageView](https://github.com/Finneyyy/chaperootodo_client/blob/main/stage-view.PNG)
