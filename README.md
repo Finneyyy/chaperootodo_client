@@ -15,3 +15,7 @@ The app will be running on `port 80`.
 
 
 ![StageView](https://github.com/Finneyyy/chaperootodo_client/blob/main/stage-view.PNG)
+
+
+
+![actuallyupandrunning](https://github.com/Finneyyy/chaperootodo_client/blob/main/upandrunnin.PNG)
