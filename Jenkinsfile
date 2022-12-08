@@ -15,8 +15,8 @@ pipeline{
                     sh "whoami"
                     sh "pwd"
                     sh "ls -la"
-                    sh "sudo usermod -aG sudo jenkins"
-                    sh "sudo ./setup.sh"
+                   // sh "sudo -S usermod -aG docker jenkins"
+                    sh "./setup.sh"
                 }
             }
             stage('Run App'){
