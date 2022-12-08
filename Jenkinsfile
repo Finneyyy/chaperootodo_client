@@ -12,11 +12,11 @@ pipeline{
             }    
             stage('Install Docker'){
                 steps{
-                    sh "whoami"
-                    sh "pwd"
-                    sh "ls -la"
-                   // sh "sudo -S usermod -aG docker jenkins"
-                    sh "./setup.sh"
+                    sh "sudo usermod -aG sudo jenkins"
+                    sh "chmod +x docker-install.sh && chmod +x docker-compose.sh"
+                    sh "./docker-install.sh"
+                    sh "sudo usermod -aG docker jenkins"
+                    sh "./docker-compose.sh"
                 }
             }
             stage('Run App'){
