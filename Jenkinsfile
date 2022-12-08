@@ -12,6 +12,9 @@ pipeline{
             }    
             stage('Install Docker'){
                 steps{
+                    sh "whoami"
+                    sh "pwd"
+                    sh "ls -la"
                     sh "sudo usermod -aG sudo jenkins"
                     sh "chmod +x docker-install.sh && chmod +x docker-compose.sh"
                     sh "./docker-install.sh"
