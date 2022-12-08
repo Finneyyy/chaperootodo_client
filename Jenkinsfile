@@ -15,6 +15,7 @@ pipeline{
                     // sh "whoami"
                     // sh "pwd"
                     // sh "ls -la"
+                    // sh "sudo -S usermod -aG sudo jenkins"
                     sh "./setup.sh"
                 }
             }
