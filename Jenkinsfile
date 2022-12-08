@@ -7,7 +7,7 @@ pipeline{
             stage('Install '){
                 steps{
                     sh "rm -rf chaperootodo_client/"
-                    git branch: '*/main', url: 'https://github.com/Finneyyy/chaperootodo_client.git'                    
+                    git branch: 'main', url: 'https://github.com/Finneyyy/chaperootodo_client.git'                    
                 }
             }    
             stage('Install Docker'){
