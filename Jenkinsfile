@@ -1,7 +1,7 @@
 pipeline{
     agent any
     environment{
-        DB_PASSWORD=password123
+        DB_PASSWORD="password123"
     }
     stages{
         stage('Install '){
